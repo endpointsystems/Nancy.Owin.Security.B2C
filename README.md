@@ -22,7 +22,7 @@ If you're unfamiliar with these technologies, or confused on which one you use f
 
 [MS Graph](https://developer.microsoft.com/en-us/graph) is a REST API platform that allows developers to access the Office 365 suite. You'll use this for most development efforts revolving around Office 365 development.
 
-![What's in the graph?](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/microsoft_graph.png)
+![What's in the graph?](microsoft_graph.png)
 
 
 
