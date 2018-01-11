@@ -16,7 +16,7 @@ The purpose of this library is to provide Nancy OWin support for authentication 
 If you're unfamiliar with these technologies, or confused on which one you use for what scenario, it works like this: 
 
 - When authenticating, you are going to use OpenID to connect and authenticate against your respective directory
--  When performing other operations (accessing someone's O365 account, or reading what groups a user belongs to in the directory) you use graph operations. 
+- When performing other operations (accessing someone's O365 account, or reading what groups a user belongs to in the directory) you use graph operations. 
 
 #### Graph API and MS Graph
 
@@ -26,7 +26,7 @@ If you're unfamiliar with these technologies, or confused on which one you use f
 
 
 
-While Graph API is on its way towards general obsolescence, it is important to understand that it is the API to use if you want to interact with your Azure AD B2C tenant - not MS Graph. This tends to get a little confusing, so it's worth pointing out the differences. 
+While [Azure AD Graph API](https://msdn.microsoft.com/Library/Azure/Ad/Graph/howto/azure-ad-graph-api-operations-overview?f=255&MSPPError=-2147217396) is on its way towards general obsolescence, it is important to understand that it is the API to use if you want to interact with your Azure AD B2C tenant - not MS Graph. This tends to get a little confusing, so it's worth pointing out the differences. 
 
 ##### MS Graph Links
 
