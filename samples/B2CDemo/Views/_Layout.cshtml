@@ -1,0 +1,27 @@
+﻿@using System.Web
+@using System.Runtime.CompilerServices
+@using Nancy.ViewEngines.Razor
+@inherits NancyRazorViewBase<dynamic>
+<!doctype html>
+<html lang="en" ng-app="application">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nancy Azure AD B2C Demo</title>
+  <!-- Compressed CSS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css" />
+  @*<link href="~/build/assets/css/app.css" rel="stylesheet" type="text/css">*@
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  @*<link href="~/Static/app.css" rel="stylesheet" type="text/css">*@
+  <script src="~/build/assets/js/app.js"></script>
+</head>
+<body>
+  @Html.Partial("Shared/menu")
+    @RenderBody()
+  @*<script src="~/content/build/assets/js/vendor/jquery.js"></script>
+    <script src="~/content/build/assets/js/vendor/what-input.js"></script>
+    <script src="~/content/pbuild/assets/js/foundation.js"></script>
+    <script src="~/content/build/assets/js/app.js"></script>*@
+</body>
+</html>

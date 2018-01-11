@@ -1,0 +1,36 @@
+@using Nancy.Security
+@using Nancy.ViewEngines.Razor
+@inherits NancyRazorViewBase<string>
+
+@{
+  ViewBag.Title = "Claims";
+    var user = RenderContext.Context.CurrentUser;
+
+}
+
+<h2>Claims</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Issuer</th>
+      <th>Original Issuer</th>
+      <th>Subject</th>
+      <th>Type</th>
+      <th>Value</th>
+      <th>ValueType</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var claim in user.Claims)
+  {
+      <tr>
+        <td>@claim.Issuer</td>
+        <td>@claim.OriginalIssuer</td>
+        <td>@claim.Subject</td>
+        <td>@claim.Type</td>
+        <td>@claim.Value</td>
+        <td>@claim.ValueType</td>
+      </tr>
+}
+  </tbody>
+</table>

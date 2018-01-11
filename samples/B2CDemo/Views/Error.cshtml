@@ -1,0 +1,13 @@
+@using Nancy.ViewEngines.Razor
+@inherits NancyRazorViewBase<dynamic>
+
+@{
+  ViewBag.Title = "Error";
+  Layout = "~/Views/_Layout.cshtml";
+}
+<div class="jumbotron">
+  <div class="container">
+    <h1>@Context.Parameters["error"]</h1>
+    <p>@Context.Parameters["error_description"]</p>
+  </div>
+</div>

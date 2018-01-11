@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="B2CDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GraphAppId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Graph API AppId (from Azure AD)</Value>
+    </Setting>
+    <Setting Name="GraphAppIdUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Graph API AppUri (from Azure AD)</Value>
+    </Setting>
+    <Setting Name="ReplyUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">the reply URL for your app (https://localhost:44375/)</Value>
+    </Setting>
+    <Setting Name="GraphAppKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Graph API app secret (from Azure AD)</Value>
+    </Setting>
+    <Setting Name="Tenant" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">yourtenantname.onmicrosoft.com</Value>
+    </Setting>
+    <Setting Name="LoginAppId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">your B2C app ID</Value>
+    </Setting>
+    <Setting Name="LoginAppKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">your B2C app secret</Value>
+    </Setting>
+    <Setting Name="LoginPolicies" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;B2C_1_SignUpSignIn&lt;/string&gt;
+  &lt;string&gt;B2C_1_ProfEdit&lt;/string&gt;
+  &lt;string&gt;B2C_1_ResetPwd&lt;/string&gt;
+  &lt;string&gt;B2C_1_SignUp&lt;/string&gt;
+  &lt;string&gt;B2C_1_SignIn&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="LoginScopes" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">openid email profile offline_access</Value>
+    </Setting>
+    <Setting Name="LoginMetadataUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://login.microsoftonline.com/{0}/v2.0/.well-known/openid-configuration?p={1}</Value>
+    </Setting>
+    <Setting Name="LoginCaptions" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Sign up/Sign in&lt;/string&gt;
+  &lt;string&gt;Edit Profile&lt;/string&gt;
+  &lt;string&gt;Reset Password&lt;/string&gt;
+  &lt;string&gt;Sign Up&lt;/string&gt;
+  &lt;string&gt;Sign In&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
