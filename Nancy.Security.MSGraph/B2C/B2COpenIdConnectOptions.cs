@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.OpenIdConnect;
 
 namespace Nancy.OWin.Security.MSGraph.B2C
 {
+
   public class B2COpenIdConnectOptions
   {
     public OpenIdConnectAuthenticationOptions Options { get; }
@@ -37,7 +38,14 @@ namespace Nancy.OWin.Security.MSGraph.B2C
       authenticationOptions.PostLogoutRedirectUri = redirectUri;
       Options = authenticationOptions;
     }
-
+    /// <summary>
+    /// Configure the notification events coming from the OpenID B2C APIs. 
+    /// </summary>
+    /// <param name="policy">The B2C policy in use.</param>
+    /// <param name="resetPasswordUri">The URL to redirect to in the event of a password reset.</param>
+    /// <param name="accessDeniedUri">The URL to redirect to in the event of access being denied.</param>
+    /// <param name="errorUri">The URL to redirect to in the event of an error.</param>
+    /// <returns>The <see cref="OpenIdConnectAuthenticationNotifications"/> used as part of the <see cref="OpenIdConnectAuthenticationOptions"/></returns>
     private OpenIdConnectAuthenticationNotifications GetNotifications(string policy, string resetPasswordUri, string accessDeniedUri, string errorUri)
     {
       return new OpenIdConnectAuthenticationNotifications()

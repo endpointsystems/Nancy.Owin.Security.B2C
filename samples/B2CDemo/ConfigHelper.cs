@@ -35,4 +35,14 @@ namespace B2CDemo
       public StringCollection Captions => Settings.Default.LoginCaptions;
         
   }
+
+  public class GraphConfigHelper: IGraphAppConfig
+  {
+    public string Tenant => Settings.Default.Tenant;
+    public string AppId => Settings.Default.GraphAppId;
+    public string AppIdUri => null;
+    public string ReplyUrl => Settings.Default.ReplyUrl;
+    public string AppKey => Settings.Default.GraphAppKey;
+    public string Scopes => null;
+  }
 }

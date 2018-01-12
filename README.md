@@ -44,12 +44,36 @@ Authenticate against Azure AD using personal or work credentials. For more infor
 
 - [Scopes, permissions, and consent in the Azure Active Directory 2.0 endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) 
 - [Azure Active Directory v2.0 and the OpenID Connect Protocol](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oidc)
-- ​
+
+#### Azure Active Directory B2C
+
+The most significant difference between Azure AD and Azure AD B2C is the extensible policy framework. Policies fully describe consumer identity experiences such as sign-up, sign-in, or profile editing. There are [built-in policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies) for getting started, as well as the ability to create custom policies via the [Identity Experience Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+
+Policies can include things like:
+
+- using social media accounts (Facebook, Twitter, etc.) enterprise or local accounts for registration and access
+- custom attributes for consumer data collection 
+- [Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-mfa)
+- User profile editing or password resetting
+
+
 
 #### Sample App
 
-Included in this repo is a sample application using Nancy 2.0 and Owin, authenticating and performing options against an Azure AD B2C tenant. Others will follow suit as the project progresses
+Included in this repo is a sample application using Nancy 2.0 and Owin, authenticating and performing customer an Azure AD B2C tenant. Others will follow suit as the project progresses. 
 
 #### Project Status
 
 Currently everything in the code revolves around a B2C scenario I've been working on. Now that the B2C code is where I need it, Graph API and MS Graph efforts will follow shortly. 
+
+#### Acknowledgments
+
+Much of the code in this library currently comes from the repositories listed below:
+
+- [Active Directory B2C Advanced Policies](https://github.com/Azure-Samples/active-directory-b2c-advanced-policies)
+
+- [Nancy.MSOwinSecurity from damianh](https://github.com/damianh/Nancy.MSOwinSecurity)
+
+- https://github.com/AzureADQuickStarts/B2C-GraphAPI-DotNet
+
+  ​
