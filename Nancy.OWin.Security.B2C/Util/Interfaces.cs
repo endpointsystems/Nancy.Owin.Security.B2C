@@ -1,6 +1,6 @@
 ﻿using System.Collections.Specialized;
 
-namespace Nancy.OWin.Security.MSGraph.Util
+namespace Nancy.OWin.Security.B2C.Util
 {
   public interface IGraphAppConfig
   {
@@ -12,10 +12,6 @@ namespace Nancy.OWin.Security.MSGraph.Util
     /// Gets the Azure AD app ID.
     /// </summary>
     string AppId { get; }
-    /// <summary>
-    /// Gets the Azure AD app ID URL. This can be set to null.
-    /// </summary>
-    string AppIdUri { get; }
     /// <summary>
     /// Gets the Azure AD app reply URL.
     /// </summary>

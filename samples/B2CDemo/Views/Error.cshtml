@@ -3,11 +3,12 @@
 
 @{
   ViewBag.Title = "Error";
-  Layout = "~/Views/_Layout.cshtml";
 }
 <div class="jumbotron">
   <div class="container">
-    <h1>@Context.Parameters["error"]</h1>
-    <p>@Context.Parameters["error_description"]</p>
+      <h1>@Request.Query.error</h1>
+      <code>
+          @Request.Query.error_description
+      </code>
   </div>
 </div>

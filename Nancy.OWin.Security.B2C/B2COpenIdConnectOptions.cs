@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Owin.Security.OpenIdConnect;
 
-namespace Nancy.OWin.Security.MSGraph.B2C
+namespace Nancy.OWin.Security.B2C
 {
 
   public class B2COpenIdConnectOptions

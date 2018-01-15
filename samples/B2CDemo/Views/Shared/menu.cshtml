@@ -3,38 +3,39 @@
 @inherits NancyRazorViewBase<string>
 
 @{
-    var user = RenderContext.Context.CurrentUser;    
+    var user = RenderContext.Context.CurrentUser;
 }
 
 <nav class="global-nav show-for-smedium">
-  <div class="global-nav-title">
-    <a href="~/" class="brand">Nancy OWin Azure AD B2C Demo</a>
-    <ul class="menu align-right">
-      @if (user != null && user.Identity != null && user.Identity.IsAuthenticated)
-      {
-        <li class="menu-item"><a href="~/Claims">Claims</a></li>
-        <li class="menu-item"><a href="~/SignOut">Sign out</a></li>
-        <li class="menu-item"><a href="~/Profile">Hello @user.FindFirst(ClaimTypes.GivenName).Value</a></li>
-      }
-      else
-      {
-        <li class="menu-item"><a href="~/Login">Sign Up/Sign In</a></li>
-      }
+    <div class="global-nav-title">
+        <a href="~/" class="brand">Nancy OWin Azure AD B2C Demo</a>
+        <ul class="menu align-right">
+            @if (user?.Identity != null && user.Identity.IsAuthenticated)
+            {
+                <li class="menu-item"><a href="~/Claims">Claims</a></li>
+                <li class="menu-item"><a href="~/Graph">Graph</a></li>
+                <li class="menu-item"><a href="~/SignOut">Sign out</a></li>
+                <li class="menu-item"><a href="~/Profile">Hello @user.FindFirst(ClaimTypes.GivenName).Value</a></li>
+            }
+            else
+            {
+                <li class="menu-item"><a href="~/Login">Sign Up/Sign In</a></li>
+            }
 
-    </ul>
-    @*<ul class="menu align-right">
-        @if (user != null && user.Identity != null && user.Identity.IsAuthenticated)
-        {
-          <li><a href="~/Claims">Claims</a></li>
-          <li><a href="~/SignOut">Sign out</a></li>
-          <li><a href="~/Edit">Edit Profile</a></li>
+        </ul>
+        @*<ul class="menu align-right">
+              @if (user != null && user.Identity != null && user.Identity.IsAuthenticated)
+              {
+                <li><a href="~/Claims">Claims</a></li>
+                <li><a href="~/SignOut">Sign out</a></li>
+                <li><a href="~/Edit">Edit Profile</a></li>
 
-        }
-        else
-        {
-          <li><a href="~/Login">Sign Up/Sign In</a></li>
-        }
+              }
+              else
+              {
+                <li><a href="~/Login">Sign Up/Sign In</a></li>
+              }
 
-      </ul>*@
-  </div>
+            </ul>*@
+    </div>
 </nav>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 
-namespace Nancy.OWin.Security.MSGraph.Extensions
+namespace Nancy.OWin.Security.B2C.Extensions
 {
   /// <summary>
   /// This <seealso cref="NancyContext"/> extension pulls the <seealso cref="IAuthenticationManager"/> out of the OWin middleware. 

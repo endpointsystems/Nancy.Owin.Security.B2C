@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461;net462;net47</TargetFrameworks>
+    <Version>2.0.0.0-clinteastwood</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Nancy.OWin.Security.B2C</PackageId>
+    <Authors>endpointsystems</Authors>
+    <Company>Nancy.OWin.Security.B2C</Company>
+    <Product>Nancy.OWin.Security.B2C</Product>
+    <Description>This library simplifies the configuration (and dependencies) of Azure AD B2C within a Nancy OWin applciation.</Description>
+    <PackageTags>Nancy AzureAD Azure B2C</PackageTags>
+    <AssemblyName>Nancy.OWin.Security.B2C</AssemblyName>
+    <RootNamespace>Nancy.OWin.Security.B2C</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="AAD\**" />
+    <EmbeddedResource Remove="AAD\**" />
+    <None Remove="AAD\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Owin" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Owin.Security.OpenIdConnect" Version="3.1.0" />
+    <PackageReference Include="Nancy" Version="2.0.0-clinteastwood" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.Services.Client" />
+  </ItemGroup>
+
+</Project>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.OWin.Security.MSGraph", "Nancy.Security.MSGraph\Nancy.OWin.Security.MSGraph.csproj", "{2D6D0ADB-1D60-4473-A8E6-D39FED97C5B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nancy.OWin.Security.B2C", "Nancy.OWin.Security.B2C\Nancy.OWin.Security.B2C.csproj", "{2D6D0ADB-1D60-4473-A8E6-D39FED97C5B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{734D2C87-48E8-4744-A88E-B7747674BD8E}"
 EndProject

@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="B2CDemo.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="GraphAppId" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Graph API AppId (from Azure AD)</Value>
-    </Setting>
     <Setting Name="GraphAppIdUri" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Graph API AppUri (from Azure AD)</Value>
     </Setting>
@@ -48,6 +45,9 @@
   &lt;string&gt;Sign Up&lt;/string&gt;
   &lt;string&gt;Sign In&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="GraphAppId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c522bf90-5635-4e09-9e9c-5738d89c8a85</Value>
     </Setting>
   </Settings>
 </SettingsFile>

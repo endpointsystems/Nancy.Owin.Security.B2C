@@ -1,6 +1,6 @@
 ﻿using System.Collections.Specialized;
 using B2CDemo.Properties;
-using Nancy.OWin.Security.MSGraph.Util;
+using Nancy.OWin.Security.B2C.Util;
 
 namespace B2CDemo
 {
@@ -28,7 +28,7 @@ namespace B2CDemo
 
       public string AccessDeniedUri =>  "/AccessDenied";
 
-      public string ErrorUri =>  "/Error";
+      public string ErrorUri =>  "/Error?error={0}&error_description={1}";
 
       public StringCollection Policies => Settings.Default.LoginPolicies;
         

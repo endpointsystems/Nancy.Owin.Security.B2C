@@ -1,6 +1,6 @@
 ﻿using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
-using Nancy.OWin.Security.MSGraph.B2C;
+using Nancy.OWin.Security.B2C;
 using Owin;
 
 namespace B2CDemo

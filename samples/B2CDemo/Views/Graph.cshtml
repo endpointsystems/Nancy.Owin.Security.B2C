@@ -1,3 +1,15 @@
-﻿@using Nancy.Security
+﻿@Model dynamic
+@using Nancy.Security
 @using Nancy.ViewEngines.Razor
+@using Nancy.OWin.Security.B2C.B2C
 @inherits NancyRazorViewBase<string>
+
+
+@{
+    ViewBag["Title"] = "B2C Graph API";
+    var userObjectId = RenderContext.Context.CurrentUser.FindFirst(claim => claim.Type == ClaimTypes.ObjectIdentifier).Value;
+
+}
+<code>
+    @Model.ToString();
+</code>

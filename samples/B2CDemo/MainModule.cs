@@ -1,6 +1,6 @@
 ﻿using Microsoft.Owin.Security;
 using Nancy;
-using Nancy.OWin.Security.MSGraph.Extensions;
+using Nancy.OWin.Security.B2C.Extensions;
 using Nancy.Responses;
 
 namespace B2CDemo
@@ -13,12 +13,16 @@ namespace B2CDemo
       RedirectUri = "/"
     };
 
+
     public MainModule()
     {
+      
       Get("/",  args => View["Index"]);
+      
       Get("/Claims",  args => View["Claims"]);
+
       Get("/Login", args =>
-      {
+      {        
         Context.GetAuthenticationManager().Challenge(props, helper.Policies[0]);
         return HttpStatusCode.Unauthorized;
       });
@@ -36,6 +40,10 @@ namespace B2CDemo
         Context.GetAuthenticationManager().SignOut();
         return HttpStatusCode.Unauthorized;
       });
-      Get("/Error{error}{error_description}",  args => View["Error"]);
+      Get("/Error{error}{error_description}",  args =>
+      {
+        var qargs = Request.Query;
+        return View["Error"];
+      });
     }
   }}

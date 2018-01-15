@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin.Security.OpenIdConnect;
-using Nancy.OWin.Security.MSGraph.Util;
+using Nancy.OWin.Security.B2C.Util;
 using Owin;
 
-namespace Nancy.OWin.Security.MSGraph.B2C
+namespace Nancy.OWin.Security.B2C
 {
   /// <summary>
   /// OWin extension for adding B2C OpenID connection policies to the runtime.

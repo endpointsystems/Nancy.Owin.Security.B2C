@@ -25,15 +25,6 @@ namespace B2CDemo.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Graph API AppId (from Azure AD)")]
-        public string GraphAppId {
-            get {
-                return ((string)(this["GraphAppId"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Graph API AppUri (from Azure AD)")]
         public string GraphAppIdUri {
             get {
@@ -134,6 +125,15 @@ namespace B2CDemo.Properties {
         public global::System.Collections.Specialized.StringCollection LoginCaptions {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["LoginCaptions"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("your graph application ID")]
+        public string GraphAppId {
+            get {
+                return ((string)(this["GraphAppId"]));
             }
         }
     }
