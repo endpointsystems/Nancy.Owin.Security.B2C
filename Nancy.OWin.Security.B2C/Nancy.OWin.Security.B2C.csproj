@@ -11,6 +11,11 @@
     <PackageTags>Nancy AzureAD Azure B2C</PackageTags>
     <AssemblyName>Nancy.OWin.Security.B2C</AssemblyName>
     <RootNamespace>Nancy.OWin.Security.B2C</RootNamespace>
+    <PackageProjectUrl>https://github.com/endpointsystems/Nancy.Owin.Security.B2C</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/endpointsystems/Nancy.Owin.Security.B2C</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageLicenseUrl>https://github.com/endpointsystems/Nancy.Owin.Security.B2C/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright />
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="AAD\**" />
