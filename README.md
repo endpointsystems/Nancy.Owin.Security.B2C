@@ -1,22 +1,26 @@
-# Nancy.OWin.Security.MSGraph
+# Nancy.OWin.Security.B2C
 
-### Nancy authentication and operations against Azure AD, Azure AD B2C, Graph API and MS Graph
+### Nancy authentication and operations against Azure AD B2C
 
-The purpose of this library is to provide Nancy OWin support for authentication and other graph-related operations against Microsoft Azure's many graph and directory offerings. 
-
-##### Supported Artifacts
-
-- [Microsoft Azure Active Directory (Azure AD)](https://docs.microsoft.com/en-us/azure/active-directory/)
-- [Microsoft Azure Active Directory Business-to-Consumer (Azure AD B2C)](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview) 
-- [Microsoft Graph (MS Graph)](https://developer.microsoft.com/en-us/graph)
-- [Azure Active Directory Graph API](https://developer.microsoft.com/en-us/graph) 
+The purpose of this library is to provide Nancy OWin support for authentication Microsoft Azure Active Directory B2C. 
 
 #### How it works 
 
-If you're unfamiliar with these technologies, or confused on which one you use for what scenario, it works like this: 
-
 - When authenticating, you are going to use OpenID to connect and authenticate against your respective directory
 - When performing other operations (accessing someone's O365 account, or reading what groups a user belongs to in the directory) you use graph operations. 
+
+#### Azure Active Directory B2C
+
+The most significant difference between Azure AD and Azure AD B2C is the extensible policy framework. Policies fully describe consumer identity experiences such as sign-up, sign-in, or profile editing. There are [built-in policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies) for getting started, as well as the ability to create custom policies via the [Identity Experience Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
+
+Policies can include things like:
+
+- using social media accounts (Facebook, Twitter, etc.) enterprise or local accounts for registration and access
+- custom attributes for consumer data collection 
+- [Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-mfa)
+- User profile editing or password resetting
+
+Note: Graph API and MSGraph were originally intended for inclusion in this project; however, it appears that Graph API will eventually be superseded by MSGraph, and given the nature of Graph API operations, it appears that the better application for anything related to Graph API operations be in a separate application altogether. That said, here is some information on MS Graph, Graph API, and Azure Active Directory.
 
 #### Graph API and MS Graph
 
@@ -45,18 +49,6 @@ Authenticate against Azure AD using personal or work credentials. For more infor
 - [Scopes, permissions, and consent in the Azure Active Directory 2.0 endpoint](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) 
 - [Azure Active Directory v2.0 and the OpenID Connect Protocol](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oidc)
 
-#### Azure Active Directory B2C
-
-The most significant difference between Azure AD and Azure AD B2C is the extensible policy framework. Policies fully describe consumer identity experiences such as sign-up, sign-in, or profile editing. There are [built-in policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies) for getting started, as well as the ability to create custom policies via the [Identity Experience Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
-
-Policies can include things like:
-
-- using social media accounts (Facebook, Twitter, etc.) enterprise or local accounts for registration and access
-- custom attributes for consumer data collection 
-- [Multi-Factor Authentication](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-mfa)
-- User profile editing or password resetting
-
-
 
 #### Sample App
 
@@ -64,7 +56,7 @@ Included in this repo is a sample application using Nancy 2.0 and Owin, authenti
 
 #### Project Status
 
-Currently everything in the code revolves around a B2C scenario I've been working on. Now that the B2C code is where I need it, Graph API and MS Graph efforts will follow shortly. 
+Currently everything in the code revolves around Azure AD B2C. 
 
 #### Acknowledgments
 
