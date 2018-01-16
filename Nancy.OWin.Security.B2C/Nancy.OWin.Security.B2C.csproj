@@ -1,7 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Set-BuildVersion-NoVSTS" Condition="'$(AGENT_ID)' == ''">
+    <BuildVersion>2.0.0.0-clinteastwood</BuildVersion>
+  </PropertyGroup>
+  <PropertyGroup Label="Set-BuildVersion-VSTS" Condition="'$(AGENT_ID)' != ''">
+    <BuildVersion>2.0.0.$(BUILD_BUILDNUMBER)-clinteastwood</BuildVersion>
+  </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>net461;net462;net47</TargetFrameworks>
-    <Version>2.0.0.0-clinteastwood</Version>
+    <Version>$(BuildVersion)</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>Nancy.OWin.Security.B2C</PackageId>
     <Authors>endpointsystems</Authors>
