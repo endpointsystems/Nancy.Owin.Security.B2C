@@ -13,7 +13,7 @@
     <Authors>endpointsystems</Authors>
     <Company>Nancy.OWin.Security.B2C</Company>
     <Product>Nancy.OWin.Security.B2C</Product>
-    <Description>This library simplifies the configuration (and dependencies) of Azure AD B2C within a Nancy OWin applciation. See https://endpointsystems.com/blog/introducing-nancy-owin-security-b2c for instructions on how to use.</Description>
+    <Description>This library simplifies the configuration (and dependencies) of Azure AD B2C within a Nancy OWin application. See https://endpointsystems.com/blog/introducing-nancy-owin-security-b2c for instructions on how to use.</Description>
     <PackageTags>Nancy AzureAD Azure B2C</PackageTags>
     <AssemblyName>Nancy.OWin.Security.B2C</AssemblyName>
     <RootNamespace>Nancy.OWin.Security.B2C</RootNamespace>
