@@ -9,6 +9,8 @@ The purpose of this library is to provide Nancy OWin support for authentication 
 - When authenticating, you are going to use OpenID to connect and authenticate against your respective directory
 - When performing other operations (accessing someone's O365 account, or reading what groups a user belongs to in the directory) you use graph operations. 
 
+For step by step instructions on how to get started: https://endpointsystems.com/blog/introducing-nancy-owin-security-b2c
+
 #### Azure Active Directory B2C
 
 The most significant difference between Azure AD and Azure AD B2C is the extensible policy framework. Policies fully describe consumer identity experiences such as sign-up, sign-in, or profile editing. There are [built-in policies](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies) for getting started, as well as the ability to create custom policies via the [Identity Experience Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom). 
