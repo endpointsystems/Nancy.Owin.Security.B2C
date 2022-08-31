@@ -1,5 +1,13 @@
 # Nancy.OWin.Security.B2C
 
+---
+
+## Obsolete
+
+This code is for `Nancy 2.0.0-clinteastwood`, which is at this point an ancient relic. Use at your own risk.
+
+---
+
 ### Nancy authentication and operations against Azure AD B2C
 
 The purpose of this library is to provide Nancy OWin support for authentication Microsoft Azure Active Directory B2C. 
